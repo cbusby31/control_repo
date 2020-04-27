@@ -4,7 +4,7 @@ node default {
    include role::master_server
   file { '/root/README':
     ensure  => file,
-    content => $fqdn,
+    content => "Welcome to ${fqdn}\n",
  }
 }
 node /^web/ {
