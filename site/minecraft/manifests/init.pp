@@ -17,4 +17,8 @@ class minecraft {
     ensure => file,
     source => 'puppet:///modules/minecraft/minecraft.service',
    }
+   service {'mincraft':
+    ensure => running,
+    enable => true,
+   }
 }
